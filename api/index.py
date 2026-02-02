@@ -3,9 +3,9 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    return 'Hello, World!'
+def index():
+    return "Hello from Flask on Vercel!"
 
-@app.route('/about')
-def about():
-    return 'About'
+# required for local testing only
+if __name__ == '__main__':
+    app.run()
