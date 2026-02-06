@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Services</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#2b2e4a,#53354a);
+  color:#fff;
+  padding:20px;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.service-box{
+  padding:18px;
+  border-radius:16px;
+  margin-bottom:15px;
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.facebook{ background:#1877f2; }
+.tiktok{ background:#000; }
+.instagram{
+  background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+}
+
+.details{
+  display:none;
+  background:#fff;
+  color:#000;
+  border-radius:16px;
+  padding:15px;
+  margin-bottom:20px;
+}
+
+.item{
+  display:flex;
+  justify-content:space-between;
+  margin:8px 0;
+}
+
+.order-btn{
+  display:block;
+  text-decoration:none;
+  background:#1877f2;
+  color:#fff;
+  padding:12px;
+  border-radius:12px;
+  text-align:center;
+  margin-top:15px;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Social Media Services</h1>
+
+<!-- FACEBOOK -->
+<div class="service-box facebook" onclick="toggle('fb')">
+Facebook Services
+</div>
+
+<div class="details" id="fb">
+  <div class="item"><span>Page Followers</span><span>₱34 / 1000</span></div>
+  <div class="item"><span>Profile Followers</span><span>₱38 / 1000</span></div>
+  <div class="item"><span>Share Post</span><span>₱30 / 1000</span></div>
+  <div class="item"><span>Reaction Post</span><span>₱27 / 1000</span></div>
+  <div class="item"><span>Reels Views</span><span>₱30 / 1000</span></div>
+  <div class="item"><span>Video Views</span><span>₱35 / 1000</span></div>
+  <hr>
+  <div class="item"><strong>Content Monetization Package</strong><strong>₱2,500</strong></div>
+
+  <a class="order-btn" href="https://www.facebook.com/Kristinemaeal" target="_blank">
+    Order Now
+  </a>
+</div>
+
+<!-- TIKTOK -->
+<div class="service-box tiktok" onclick="toggle('tt')">
+TikTok Services
+</div>
+
+<div class="details" id="tt">
+  <div class="item"><span>TikTok Followers</span><span>₱120 / 1000</span></div>
+  <div class="item"><span>TikTok Views</span><span>₱8 / 1000</span></div>
+  <div class="item"><span>TikTok Likes</span><span>₱29 / 1000</span></div>
+
+  <a class="order-btn" href="https://www.facebook.com/Kristinemaeal" target="_blank">
+    Order Now
+  </a>
+</div>
+
+<!-- INSTAGRAM -->
+<div class="service-box instagram" onclick="toggle('ig')">
+Instagram Services
+</div>
+
+<div class="details" id="ig">
+  <div class="item"><span>Instagram Followers</span><span>₱120</span></div>
+  <div class="item"><span>Instagram Views</span><span>₱8 / 1000</span></div>
+  <div class="item"><span>Instagram Likes</span><span>₱29 / 1000</span></div>
+
+  <a class="order-btn" href="https://www.facebook.com/Kristinemaeal" target="_blank">
+    Order Now
+  </a>
+</div>
+
+<script>
+function toggle(id){
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
